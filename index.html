@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar with Footer</title>
+    <title>Melexis Online Demo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav>
-        <div class="logo">ASMR Scripting</div>
+        <div class="logo">Melexis Online Demo</div>
         <div class="menu-icon" onclick="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -23,11 +23,33 @@
         </ul>
     </nav>
 
-    <div class="content">
-    </div>
+    <main class="main">
+        <div class="controls">
+            <button id="butConnect" type="button">Connect</button>
+            <select id="baudRate"></select>
+            
+            <label for="sampleSize">Sample size:</label>
+            <input type="text" id="sampleSize" value="300" size="10">
+    
+            <label for="sampleFreq">Sample freq:</label>
+            <select name="sampleFreq" id="sampleFreq">
+              <option value="1">1 Hz</option>
+              <option value="5">5 Hz</option>
+              <option value="8">8 Hz</option>
+              <option selected value="10">10 Hz</option>
+              <option value="20">20 Hz</option>
+            </select>        
+            
+            <input type="checkbox" id="darkmode"> Dark Mode
+          </div>
+    
+          <div class="grid_container">
+            <div id="log" class="log"></div>
+          </div>
+    </main>
     
     <footer>
-        <p>&copy; 2024 EAF. All Rights Reserved</p>
+        <p>&copy; 2024 Melexis. All Rights Reserved</p>
     </footer>
     
     <script src="script.js"></script>
